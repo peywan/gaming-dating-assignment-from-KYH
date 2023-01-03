@@ -1,0 +1,43 @@
+body {
+  background-color: #0c0c2c;
+}
+
+.head {
+  font-size: 15px;
+}
+
+.button {
+  color: #d14cdd;
+  background-color: #32e6e6;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.front {
+  text-align: center;
+}
+
+.list-group {
+  background-color: white;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.footer {
+  color: #d14cdd;
+  text-align: center;
+}
+
+footer {
+  color: #d14cdd;
+  text-align: center;
+}
+
+.comingSoon_container {
+  background-color: white;
+  margin: 70px;
+  padding: 30px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=index.css.map */

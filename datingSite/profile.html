@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <title>My profile</title>
+</head>
+
+<body>
+    <!--navbar med symboler, setting fungerar att avsluta/pausa medlemskap-->
+    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"> <img src="img/Pixelheart.JPG" alt="logo"  width="100" height="100" class="rounded-circle" data-bs-toggle="tooltip" title="Tillbaka till startsidan!"> Find your big love and ultimate gaming partner today  </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#expandlinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="expandlinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html"><img src="img/user.png" alt="user" width="32" height="auto"></a>
+                    <p id="output"></p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comingSoon.html"><img src="img/comment-heart (1).png" alt="chat" width="32" height="auto"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/bell.png" alt="notification" width="32" height="auto"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="setting.html"><img src="img/ettings.png" alt="setting" width="32" height="auto"></a>
+                </li>
+
+                
+            </ul>
+        </div>
+    </nav>
+
+
+<!--boxar med sin profilinfo-->
+<div class="container">
+    <div class="row  justify-content-center">
+        <div class="col-md-4"> 
+            <ul class="list-group 2">
+                <li class="list-group-item">
+                    <p class="front"> <b>Profile</b></p>
+                </li>
+                
+                <li class="front list-group-item"> <img src="img/user.png" alt="profilepic" width="170px" height="170px"> </li>
+                <li class="list-group-item">
+                    <p class="front"> Name</p>
+                    <p class="front">Age</p>
+                    <p class="front">Location</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="col-md-8">
+            <ul class="list-group 2">
+                <li class="list-group-item">
+                    <p class="front"> <b>Mer information</b></p><br>
+                    <p class="front"> Mer information, yrke</p><br>
+                    <p class="front"> Mer information, intressen</p><br>
+                    <p class="front"> Mer information, spel</p><br>
+                    <p class="front"> Mer information, övrigt</p><br>
+                    <p class="front"> Mer information</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <nav class="navbar fixed-bottom justify-content-center">
+<p class="footer"> About us | Register | Contact <br>
+</p>
+</nav>
+<!--javascript som skriver ut username i output, navbaren. Obs! den hämtar inte värdet från profile filen utan från localStorage så vi lade till den här-->
+<script>
+    var username = JSON.parse(localStorage.getItem("localUser"));
+    document.getElementById("output").innerHTML = username;
+</script>
+    
+</body>
+</html>
